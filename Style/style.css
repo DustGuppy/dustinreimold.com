@@ -63,29 +63,22 @@ header a:hover{
   color: #000000;
 }
 
-#body .profile {
+#body .profile-images img {
   border-radius: 50%;
   width: 15%;
   margin-bottom: 80px;
   padding: 0 40px 0 40px;
 }
 
-#body .profile1 {
+#body .profile-images .profile1 {
   border-radius: 50%;
   width: 18%;
   margin-bottom: 80px;
   padding: 0 40px 0 40px;
 }
 
-#body .profile:hover{
-  -webkit-transform:scale(1.25); /* Safari and Chrome */
-  -moz-transform:scale(1.25); /* Firefox */
-  -ms-transform:scale(1.25); /* IE 9 */
-  -o-transform:scale(1.25); /* Opera */
-   transform:scale(1.25);
-}
 
-#body .profile1:hover{
+#body .profile-images img:hover{
   -webkit-transform:scale(1.25); /* Safari and Chrome */
   -moz-transform:scale(1.25); /* Firefox */
   -ms-transform:scale(1.25); /* IE 9 */
@@ -105,11 +98,10 @@ header a:hover{
 
 /*Media Queries*/
 
-@media (max-height: 960px){
+@media (max-height: 948px){
   #body .profile{
     display: none;
   }
-
   #body p{
     position: fixed;
     bottom: 10;
@@ -117,15 +109,65 @@ header a:hover{
   }
 }
 
+@media (max-width: 1900px){
+  #body .profile5{
+    display: none;
+  }
+  #body .profile-images .profile1{
+    width: 15%;
+    padding: 0 70px 0 70px;
+  }
+}
+
+@media (max-width: 1500px){
+  #body .profile-images img{
+    width: 19%;
+    padding: 0 70px 0 70px;
+    margin-bottom: 120px;
+    margin-top: 70px;
+  }
+  #body .profile2{
+    display: none;
+  }
+  #body .name h1{
+    font-size: 650%;
+  }
+  #body .profile-images .profile1{
+    width: 19%;
+    padding: 0 70px 0 70px;
+    margin-bottom: 120px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 1250px){
+  #body .profile-images .profile1{
+    margin-bottom: 120px;
+  }
+}
+
+
 @media (max-width: 1000px){
   #body .name h1{
     font-size: 500%;
   }
-
-  #body .profile1{
-    width: 50%;
+  #body .profile3{
+    display: none;
   }
+  #body .profile4{
+    display: none;
+  }
+  #body .profile-images .profile1{
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
 
+@media (max-width: 820px){
+  #body .profile-images img{
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 640px) {
