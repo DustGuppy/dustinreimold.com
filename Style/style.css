@@ -46,7 +46,6 @@ header a:hover{
 #body{
   min-height: 870px;
   text-align: center;
-  background-color: #d3d3d3;
 }
 .name {
   width: 100%;
@@ -63,7 +62,6 @@ header a:hover{
   font-family: 'Tenor Sans', sans-serif;
   color: #000000;
 }
-
 
 /*ABOUT SECTION*/
 
