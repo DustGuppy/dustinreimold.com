@@ -20,6 +20,7 @@ header{
   padding-top: 12px;
   min-height: 70px;
   border-bottom: #000000 2px double;
+
 }
 header a{
   color:#000000;
@@ -44,7 +45,7 @@ header a:hover{
 
 /*body*/
 #body{
-  min-height: 870px;
+  min-height: 100%;
   text-align: center;
 }
 .name {
@@ -63,23 +64,13 @@ header a:hover{
   color: #000000;
 }
 
-/*ABOUT SECTION*/
-
-#ABOUT{
-  min-height: 900px;
-}
-
-#ABOUT h1{
-  font-size: 50px;
-  text-align: center;
-}
 
 /*Footer*/
-footer{
+#body .footer p{
   text-align: center;
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #FF6666;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
   font-family: 'Slabo 27px', serif;
 }
 
@@ -99,5 +90,11 @@ footer{
   #languages .language{
     float: left;
     text-align: center;
+  }
+
+  @media (min-height: 700px) {
+    #body{
+      min-height: 100%;
+    }
   }
 }
