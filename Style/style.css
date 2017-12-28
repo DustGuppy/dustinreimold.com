@@ -42,8 +42,8 @@ header a:hover{
   font-weight: 500;
 }
 
-/*page-header*/
-#page-header{
+/*body*/
+#body{
   min-height: 870px;
   text-align: center;
   background-color: #d3d3d3;
@@ -51,40 +51,30 @@ header a:hover{
 .name {
   width: 100%;
 }
-#page-header .name h1{
-  font-family: 'Railway Extralight', sans-serif;
+#body .name h1{
+  font-family: 'Tenor Sans', sans-serif;
   margin-top: 6%;
   font-size: 1200%;
   font-weight: 200;
 }
 
-#page-header p{
+#body p{
   font-size: 20px;
+  font-family: 'Tenor Sans', sans-serif;
   color: #000000;
 }
-/*JavaScript Activities*/
-#activities {
-  min-height: 300px;
-}
-#activities .container{
-  min-height: inherit;
-}
-#activities .container1{
-  width: 25%;
-}
-#activities .container2{
-  width: 50%;
-  margin-left: 25%;
-}
-#activities .container3{
-  width: 75%;
-  margin-left: 50%;
-}
-#activities .container4{
-  width: 100%;
-  margin-left: 75%;
+
+
+/*ABOUT SECTION*/
+
+#ABOUT{
+  min-height: 900px;
 }
 
+#ABOUT h1{
+  font-size: 50px;
+  text-align: center;
+}
 
 /*Footer*/
 footer{
