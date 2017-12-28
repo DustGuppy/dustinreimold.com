@@ -105,16 +105,51 @@ header a:hover{
 
 /*Media Queries*/
 
+@media (max-height: 960px){
+  #body .profile{
+    display: none;
+  }
+
+  #body p{
+    position: fixed;
+    bottom: 10;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px){
+  #body .name h1{
+    font-size: 500%;
+  }
+
+  #body .profile1{
+    width: 50%;
+  }
+
+}
+
 @media (max-width: 640px) {
     #body .name h1{
-      font-size: 500%;
+      font-size: 400%;
     }
 
+    #body .profile1{
+      width: 50%;
+    }
   }
 
 @media (max-width: 414px) {
       #body .name h1{
-        font-size: 200%;
+        font-size: 240%;
       }
+      #body .profile1{
+        width: 70%;
+        margin-bottom: 30px;
+      }
+  }
+
+  @media (min-height: 812px){
+    #body .profile1{
+      margin-bottom: 70px;
     }
-}
+  }
