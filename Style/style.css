@@ -56,9 +56,16 @@ header nav{
 .profile{
   margin-top: 30px;
   margin-left: 60px;
+  margin-right: 60px;
   height: 65%;
   width: 70%;
   border-radius: 50%;
+}
+
+.profession{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 20px;
 }
 
 /*Name*/
@@ -67,4 +74,5 @@ header nav{
     font-size: 45px;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 0;
   }
