@@ -99,3 +99,43 @@ header nav{
   text-decoration: none;
   color: #000000;
 }
+
+@media(max-height: 865px){
+  body{
+    background: none;
+  }
+  .box{
+    box-shadow: none;
+  }
+}
+@media(max-height: 776px){
+  header{
+    margin-top: 0;
+  }
+}
+@media(max-height: 687px){
+  .box{
+    transition: 0.3s;
+    width:350px;
+    height: 400px;
+    padding: 15px;
+  }
+  .profile{
+    margin-left: 50px;
+    margin-right: 60px;
+  }
+  header{
+    margin-top: 30px;
+  }
+  .box2{
+    padding-bottom: 30px;
+  }
+}
+@media(max-height: 646px){
+  header{
+    margin-top: 10px;
+  }
+  .box2{
+    padding-bottom: 10px;
+  }
+}
