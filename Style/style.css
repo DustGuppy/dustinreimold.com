@@ -99,8 +99,8 @@ header nav{
   text-decoration: none;
   color: #000000;
 }
-
-@media(max-height: 865px){
+/*Mobile*/
+@media(max-height: 865px) and (max-width: 450px){
   body{
     background: none;
   }
@@ -108,12 +108,12 @@ header nav{
     box-shadow: none;
   }
 }
-@media(max-height: 776px){
+@media(max-height: 776px) and (max-width: 450px){
   header{
     margin-top: 0;
   }
 }
-@media(max-height: 687px){
+@media(max-height: 687px) and (max-width: 450px){
   .box{
     transition: 0.3s;
     width:350px;
@@ -131,9 +131,41 @@ header nav{
     padding-bottom: 30px;
   }
 }
-@media(max-height: 646px){
+@media(max-height: 646px) and (max-width: 450px){
   header{
     margin-top: 10px;
+  }
+  .box2{
+    padding-bottom: 10px;
+  }
+}
+
+/*Laptop Screens*/
+@media (max-height: 600px){
+  .box{
+    width: 200px;
+    height: 300px;
+  }
+  .profile{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60%;
+    width: 80%;
+  }
+  .name{
+    margin-top: auto;
+      font-size: 25px;
+      margin-top: 10px;
+  }
+  .profession{
+      font-size: 15px;
+  }
+}
+
+@media (max-height: 546px){
+  .box{
+    margin-top: 30px;
   }
   .box2{
     padding-bottom: 10px;
