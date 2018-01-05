@@ -19,7 +19,7 @@
       <div class="menu">
         <div class="container">
           <nav>
-            <a class="about">About</a>
+            <button id="about">About</button>
             <a class="projects">Projects</a>
             <a href="./links/Resume.pdf" target="_blank" style="text-decoration: none">Resume</a>
             <a href="mailto:dustinreimold@gmail.com"class="contact" style="text-decoration: none">Contact</a>
@@ -27,6 +27,28 @@
         </div>
       </div>
     </header>
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text</p>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById('aboutModal');
+      var btn = document.getElementById("about");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
     <div class="box center">
         <img src="./image/profile.jpg" class="profile">
         <p class="name"> Dustin Reimold </p>
