@@ -33,7 +33,7 @@ header a{
 }
 header nav{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 
@@ -61,6 +61,13 @@ header nav{
   width: 70%;
   border-radius: 50%;
 }
+.name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 
 .profession{
   font-family: 'Raleway', sans-serif;
@@ -68,11 +75,26 @@ header nav{
   font-size: 20px;
 }
 
-/*Name*/
-.name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 45px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
+.box2{
+  transition: 0.3s;
+  width: 400px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+}
+
+.center2{
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
