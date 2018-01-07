@@ -189,6 +189,32 @@ header nav{
     text-decoration: none;
     cursor: pointer;
 }
+/*Desktop*/
+@media (max-width: 1700px){
+  .description{
+    width: 65%;
+  }
+}
+@media (max-width: 1645px){
+  .description{
+    width: 60%;
+  }
+}
+@media (max-width: 1345px){
+  .description{
+    width: 55%;
+  }
+}
+@media (max-width: 1220px){
+  .description{
+    width: 50%;
+  }
+}
+@media (max-width: 1085px){
+  .description{
+    width: 45%;
+  }
+}
 /*Mobile*/
 @media(max-height: 865px) and (max-width: 450px){
   body{
