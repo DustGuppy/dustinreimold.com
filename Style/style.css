@@ -165,6 +165,9 @@ header nav{
   font-family: 'Raleway', sans-serif;
 }
 
+.modal-content b{
+  color: #ea7276;
+}
 .description{
   width: 70%;
   height: 100%;
