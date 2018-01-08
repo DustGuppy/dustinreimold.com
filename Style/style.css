@@ -102,7 +102,7 @@ header nav{
 }
 
 /*About modal pop up*/
-#about{
+#about, #projects{
   background-color: #ffffff;
   border: none;
   text-transform: uppercase;
@@ -111,10 +111,10 @@ header nav{
   font-family: 'Dosis', sans-serif;
   color:#ea7276;
 }
-#about:focus{
+#about:focus,#projects:focus{
   outline: 0;
 }
-#about:hover{
+#about:hover,#projects:hover{
   color: #ff0000;
   font-weight: 500;
   cursor: pointer;
@@ -132,10 +132,18 @@ header nav{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
-.modal-content {
+.modal-content-about {
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.6s;
+  }
+  .modal-content-projects{
     background-color: #fefefe;
     margin: 5% auto;
-
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -156,7 +164,7 @@ header nav{
   height: 300px;
 }
 
-.modal-content p{
+.modal-content-about p{
   font-size: 30px;
   position: relative;
   text-align: left;
@@ -165,7 +173,7 @@ header nav{
   font-family: 'Raleway', sans-serif;
 }
 
-.modal-content b{
+.description b{
   color: #ea7276;
 }
 .description{
@@ -179,7 +187,7 @@ header nav{
 }
 
 /*Close button on modal*/
-.close {
+.close, .close2 {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -187,7 +195,7 @@ header nav{
     margin-right: 7px;
 }
 .close:hover,
-.close:focus {
+.close:focus, .close2:hover, .close2:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

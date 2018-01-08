@@ -20,7 +20,7 @@
         <div class="container">
           <nav>
             <button id="about">About</button>
-            <a class="projects">Projects</a>
+            <button id="projects">Projects</button>
             <a href="./links/Resume.pdf" target="_blank" style="text-decoration: none">Resume</a>
             <a href="mailto:dustinreimold@gmail.com"class="contact" style="text-decoration: none">Contact</a>
           </nav>
@@ -28,35 +28,57 @@
       </div>
     </header>
     <div id="aboutModal" class="modal">
-      <div class="modal-content">
+      <div class="modal-content-about">
         <span class="close">&times;</span>
         <p>Hi, I'm Dustin</p>
           <div class="description">
             <p>I'm a sophomore computer science major at Pennsylvania State University Erie -
               The Behrend College.<br><br>I am an advid participant in hackathons
               where I gain a wide variety of knowledge from different programmers
-              and companies<br><br>Currently, I am looking for internship opportunities
+              and companies.<br><br>Currently, I am looking for internship opportunities
               for the summer of 2018. <b>Please feel free to contact me!</b></p>
         </div>
         <img src="./image/about-profile.jpeg"class="aboutprofile">
       </div>
+      <script>
+        var modal = document.getElementById("aboutModal");
+        var btn = document.getElementById("about");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) { // FIXME: close button does not close modal
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+      </script>
     </div>
-    <script>
-      var modal = document.getElementById('aboutModal');
-      var btn = document.getElementById("about");
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function() {
-          modal.style.display = "block";
-      }
-      span.onclick = function() {
-          modal.style.display = "none";
-      }
-      window.onclick = function(event) { // FIXME: close button does not close modal
-          if (event.target == modal) {
-              modal.style.display = "none";
-          }
-      }
-    </script>
+    <div id="projectModal" class="modal">
+      <div class="modal-content-projects">
+        <span class="close2">&times;</span>
+        <p>Some text</p>
+      </div>
+      <script>
+        var modal2 = document.getElementById('projectModal');
+        var btn2 = document.getElementById("projects");
+        var span2 = document.getElementsByClassName("close2")[0];
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        window.onclick = function(event) { // FIXME: close button does not close modal
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+      </script>
+    </div>
     <div class="box center">
         <img src="./image/profile.jpg" class="profile">
         <p class="name"> Dustin Reimold </p>
