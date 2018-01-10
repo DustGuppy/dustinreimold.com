@@ -186,6 +186,16 @@ header nav{
   font-size: 20px;
 }
 
+/*Projects Modal*/
+.modal-content-projects{
+  overflow-y: auto;
+}
+.projects-modal-title p{
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
 /*Close button on modal*/
 .close, .close2 {
     color: #aaa;
