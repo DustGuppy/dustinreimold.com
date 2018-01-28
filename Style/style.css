@@ -236,6 +236,27 @@ header nav{
     width: 45%;
   }
 }
+@media (max-height: 720px){
+  .box{
+    width: 200px;
+    height: 300px;
+  }
+  .name{
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .profile{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 50%;
+    width: 70%;
+  }
+  .profession{
+    font-size: 18px;
+  }
+}
 /*Mobile*/
 @media(max-height: 865px) and (max-width: 450px){
   body{
