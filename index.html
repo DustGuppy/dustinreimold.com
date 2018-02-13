@@ -30,8 +30,8 @@
       <div class="menu">
         <div class="container">
           <nav>
-            <button id="about">About</button>
-            <button id="projects">Projects</button>
+            <button id="about" onclick="openAboutModal()">About</button>
+            <button id="projects" onclick="openProjectModal()">Projects</button>
             <a href="./links/Resume.pdf" target="_blank" style="text-decoration: none">Resume</a>
             <a href="mailto:dustinreimold@gmail.com"class="contact" style="text-decoration: none">Contact</a>
           </nav>
@@ -40,7 +40,8 @@
     </header>
     <div id="aboutModal" class="modal">
       <div class="modal-content-about">
-        <span class="close">&times;</span>
+        <button id="closeAbout" onclick="closeAboutModal()">&times;</button>
+        <div class="name">
         <p>Hi, I'm Dustin</p>
           <div class="description">
             <p>I'm a sophomore computer science major at Pennsylvania State University Erie -
@@ -49,15 +50,16 @@
               and companies.<br><br>Currently, I am looking for internship opportunities
               for the summer of 2018. <b>Please feel free to contact me!</b></p>
         </div>
+      </div>
         <img src="./image/about-profile.jpeg"class="aboutprofile">
       </div>
     </div>
     <div id="projectModal" class="modal">
       <div class="modal-content-projects">
-        <span class="close2">&times;</span>
-        <div class="projects-modal-title">
-        <p>My Projects</p>
-      </div>
+        <button id="closeProject" onclick="closeProjectModal()">&times;</button>
+          <div class="projects-modal-title">
+          <p>My Projects</p>
+        </div>
       </div>
     </div>
     <div class="box center">
