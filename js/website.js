@@ -30,3 +30,9 @@ function openProjectModal(){
 function closeProjectModal(){
   document.getElementById('projectModal').style.display ="none";
 }
+
+document.getElementById("dropDown").onclick = function(){dropDownMenu()};
+
+function dropDownMenu(){
+  document.getElementById('dropdown').style.display = "block";
+}

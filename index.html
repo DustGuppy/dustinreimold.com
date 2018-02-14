@@ -26,18 +26,26 @@
     <link rel="stylesheet" href="./Style/style.css">
   </head>
   <body>
-    <header>
+    <div class="top">
       <div class="menu">
-        <div class="container">
-          <nav>
-            <button id="about" onclick="openAboutModal()">About</button>
-            <button id="projects" onclick="openProjectModal()">Projects</button>
-            <a href="./links/Resume.pdf" target="_blank" style="text-decoration: none">Resume</a>
-            <a href="mailto:dustinreimold@gmail.com"class="contact" style="text-decoration: none">Contact</a>
-          </nav>
+        <div class="mobile">
+            <div id="dropdown" style="display: none;">
+              <button onclick="dropDownMenu()" class="dropDownButton">
+                <div class="myDropdown" class="dropDown-content">
+                  <button id="about" onclick="openAboutModal()">About</button>
+                  <button id="projects" onclick="openProjectModal()">Projects</button>
+                  <a href="./links/Resume.pdf" target="_blank" style="text-decoration: none">Resume</a>
+                  <a href="mailto:dustinreimold@gmail.com"class="contact" style="text-decoration: none">Contact</a>
+                </div>
+            </div>
+            <div class="desktop">
+              <button id="about" onclick="openAboutModal()"class="desktop-menu-option">About</button>
+              <button id="projects" onclick="openProjectModal()"class="desktop-menu-option">Projects</button>
+              <a href="./links/Resume.pdf" target="_blank" class="desktop-menu-option" style="text-decoration: none">Resume</a>
+              <a href="mailto:dustinreimold@gmail.com"class="desktop-menu-option" style="text-decoration: none">Contact</a>
+            </div>
         </div>
       </div>
-    </header>
     <div id="aboutModal" class="modal">
       <div class="modal-content-about">
         <button id="closeAbout" onclick="closeAboutModal()">&times;</button>
