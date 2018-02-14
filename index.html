@@ -24,7 +24,9 @@
     body{margin: 0}
     </style>
     <link rel="stylesheet" href="./css/Style.css">
-    <link rel="media-queries" href="./css/MediaQueries">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1700px)"href="./css/desktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 450px)"href="./css/phone.css">
+
   </head>
   <body>
     <div class="top">
@@ -50,7 +52,7 @@
     <div id="aboutModal" class="modal">
       <div class="modal-content-about">
         <button id="closeAbout" onclick="closeAboutModal()">&times;</button>
-          <div class="name">
+          <div class="about-name">
               <p>Hi, I'm Dustin</p>
           </div>
           <div class="description">
@@ -59,9 +61,9 @@
               where I gain a wide variety of knowledge from different programmers
               and companies.<br><br>Currently, I am looking for internship opportunities
               for the summer of 2018. <a href="mailto:dustinreimold@gmail.com" class="aboutLink">
-                Please feel free to contact me!</b></a>
+                Please feel free to contact me!</p></a>
           </div>
-        <img src="./image/about-profile.jpeg"class="aboutprofile">
+        <img src="./image/about-profile.jpeg"class="aboutProfileImage">
       </div>
     </div>
     <div id="projectModal" class="modal">
@@ -69,6 +71,12 @@
         <button id="closeProject" onclick="closeProjectModal()">&times;</button>
           <div class="projects-modal-title">
           <p>My Projects</p>
+        </div>
+        <div class="projects-description" style="text-align:center; font-family: 'Raleway', sans-serif">
+          <p>I have projects, I just haven't put them on my website yet
+            <br>Please visit my linkedin to see a description of them. It should be near the bottom.
+            <a href="https://www.linkedin.com/in/dustin-reimold-9b7701126/" style="color:#ea7276; text-decoration:none">Link
+          </p></a>
         </div>
       </div>
     </div>
