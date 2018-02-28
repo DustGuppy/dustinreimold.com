@@ -4,7 +4,7 @@
     width: 70%;
   }
   .aboutProfileImage{
-  
+
   }
 }
 @media (max-width: 1645px){
@@ -14,17 +14,41 @@
 }
 @media (max-width: 1345px){
   .description{
-    width: 55%;
+    width: 65%;
+    padding-right: 0;
+  }
+  .aboutProfileImage{
+    padding-right: 20px;
   }
 }
-@media (max-width: 1220px){
+@media (max-width: 1280px){
   .description{
-    width: 50%;
+    width: 65%;
+    padding-right: 0;
+  }
+  .aboutProfileImage{
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1150px{
+  .aboutProfileImage{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .description{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (max-width: 1085px){
   .description{
-    width: 45%;
+    width: 55%;
+    padding: 0 30px 30px 0;
+  }
+  .aboutProfileImage{
+    padding: 20px;
   }
 }
 @media (max-width: 600px){
