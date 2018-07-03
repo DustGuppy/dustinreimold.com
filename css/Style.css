@@ -37,7 +37,7 @@ body{
   height: 100%;
 }
 .desktop-menu-option:hover{
-  color: #ff0000;
+  color: #918167;
   font-weight: 500;
   cursor: pointer;
 }
@@ -108,20 +108,20 @@ body{
 }
 
 /*About modal pop up*/
-#about, #projects{
+.desktop-menu-option {
   background-color: #ffffff;
   border: none;
   text-transform: uppercase;
   font-size: 25px;
   padding: 0 30px 0 30px;
   font-family: 'Dosis', sans-serif;
-  color:#ea7276;
+  color:#e4d5ae;
 }
 #about:focus,#projects:focus{
   outline: 0;
 }
 #about:hover,#projects:hover{
-  color: #ff0000;
+  color: #918167;
   font-weight: 500;
   cursor: pointer;
 }
@@ -181,7 +181,7 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
-  .description b{
+.description b{
   color: #ea7276;
 }
 .description{
@@ -235,7 +235,7 @@ body{
 /*About link*/
 .aboutLink{
   text-decoration: none;
-  color: #ff0000;
+  color: #df9721;
   font-weight: 500;
   cursor: pointer;
 }
